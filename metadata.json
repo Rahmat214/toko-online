@@ -1,0 +1,6 @@
+{
+  "name": "Karya Ruang — Katalog Toko Online & Pemesanan WhatsApp",
+  "description": "Toko online kurasi furnitur, pencahayaan, keramik, dan objek harian dengan manajemen produk CRUD, pencarian, filter, halaman detail, dan pemesanan langsung ke WhatsApp.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,184 @@
+import type { Product, StoreSettings } from '../types';
+
+export const DEFAULT_STORE_SETTINGS: StoreSettings = {
+  storeName: 'Karya Ruang',
+  whatsappNumber: '081234567890',
+  storeLocation: 'Jakarta & Yogyakarta',
+};
+
+export const PRESET_PRODUCT_IMAGES: { label: string; url: string }[] = [
+  {
+    label: 'Kursi Santai Jati & Rotan',
+    url: '/src/assets/images/prod_kursi_jati_1795398915272.jpg',
+  },
+  {
+    label: 'Lampu Meja Kuningan Opal',
+    url: '/src/assets/images/prod_lampu_kuningan_1795398914591.jpg',
+  },
+  {
+    label: 'Set Teko Keramik Arang',
+    url: '/src/assets/images/prod_teko_keramik_1795398914264.jpg',
+  },
+  {
+    label: 'Meja Kopi Travertine',
+    url: '/src/assets/images/prod_meja_travertine_1795398914292.jpg',
+  },
+  {
+    label: 'Lampu Gantung Linen & Walnut',
+    url: '/src/assets/images/prod_lampu_gantung_1795398914843.jpg',
+  },
+  {
+    label: 'Tas Weekender Kulit Nabati',
+    url: '/src/assets/images/prod_tas_kulit_1795398915114.jpg',
+  },
+];
+
+export const SEED_PRODUCTS: Product[] = [
+  {
+    id: 'kursi-jati-soren',
+    sku: 'KR-F01',
+    name: 'Kursi Santai Jati Soren',
+    category: 'Furnitur',
+    price: 4850000,
+    stock: 6,
+    shortDescription:
+      'Kursi santai kayu jati Perhutani solid dengan anyaman rotan alam.',
+    description:
+      'Dirancang untuk ruang baca dan ruang tamu modern, Kursi Santai Jati Soren memadukan rangka kayu jati solid berkualitas tinggi dengan sandaran dan dudukan anyaman rotan alami.\n\nSetiap sambungan dikerjakan dengan teknik mortise-and-tenon tanpa sekrup terlihat, dilapisi finishing water-based matte oil yang menjaga serat kayu tetap terasa hangat saat disentuh.',
+    imageUrl: '/src/assets/images/prod_kursi_jati_1795398915272.jpg',
+    gallery: [
+      '/src/assets/images/prod_kursi_jati_1795398915272.jpg',
+      '/src/assets/images/hero_studio_living_1795398914934.jpg',
+    ],
+    variants: ['Natural Jati', 'Walnut Hangat'],
+    specs: {
+      material: 'Kayu Jati Grade A & Rotan Pitrit Alami',
+      dimensions: '68 × 74 × 76 cm (Tinggi dudukan 41 cm)',
+      weight: '11.5 kg',
+      care: 'Lap dengan kain kering lembut, hindari paparan matahari langsung berkepanjangan.',
+    },
+    featured: true,
+    createdAt: '2026-11-22T10:00:00.000Z',
+    updatedAt: '2026-11-22T10:00:00.000Z',
+  },
+  {
+    id: 'meja-kopi-travertine',
+    sku: 'KR-F02',
+    name: 'Meja Kopi Bundar Travertine',
+    category: 'Furnitur',
+    price: 7400000,
+    stock: 3,
+    shortDescription:
+      'Meja tamu rendah berbahan batu alam travertine honed dengan kaki silinder.',
+    description:
+      'Dipotong dari blok batu alam travertine pilihan dengan permukaan honed matte yang menonjolkan pori-pori alami batu.\n\nProporsinya yang rendah dan seimbang menjadikannya pusat perhatian yang tenang di ruang keluarga, kokoh menopang buku seni, baki saji, maupun vas keramik.',
+    imageUrl: '/src/assets/images/prod_meja_travertine_1795398914292.jpg',
+    gallery: [
+      '/src/assets/images/prod_meja_travertine_1795398914292.jpg',
+      '/src/assets/images/hero_studio_living_1795398914934.jpg',
+    ],
+    variants: ['Beige Travertine', 'Warm Limestone'],
+    specs: {
+      material: 'Batu Alam Travertine Honed + Sealer Anti-Noda',
+      dimensions: 'Diameter 95 cm × Tinggi 34 cm',
+      weight: '42 kg',
+      care: 'Gunakan tatakan gelas untuk minuman asam atau panas; bersihkan dengan air hangat.',
+    },
+    featured: true,
+    createdAt: '2026-11-21T14:00:00.000Z',
+    updatedAt: '2026-11-21T14:00:00.000Z',
+  },
+  {
+    id: 'lampu-meja-kuningan-opal',
+    sku: 'KR-P01',
+    name: 'Lampu Meja Kuningan Opal',
+    category: 'Pencahayaan',
+    price: 1950000,
+    stock: 9,
+    shortDescription:
+      'Lampu meja arsitektural rangka kuningan sikat dan bola kaca susu.',
+    description:
+      'Lampu meja dengan alas batu travertine padat, rangka lengkung kuningan sikat (brushed brass), dan diffuser kaca opal tiup tangan.\n\nMenghasilkan pendar cahaya hangat 2700K yang merata dan bebas silau, ideal untuk meja kerja, rak buku, maupun meja samping tempat tidur.',
+    imageUrl: '/src/assets/images/prod_lampu_kuningan_1795398914591.jpg',
+    gallery: ['/src/assets/images/prod_lampu_kuningan_1795398914591.jpg'],
+    variants: ['Kuningan Sikat / Travertine'],
+    specs: {
+      material: 'Kuningan Solid, Kaca Opal, Batu Travertine',
+      dimensions: '22 × 22 × 36 cm (Kabel kain 1.8 m)',
+      weight: '3.2 kg',
+      care: 'Termasuk bohlam LED E27 2700K hangat yang dapat diganti.',
+    },
+    featured: true,
+    createdAt: '2026-11-20T12:00:00.000Z',
+    updatedAt: '2026-11-20T12:00:00.000Z',
+  },
+  {
+    id: 'lampu-gantung-linen-walnut',
+    sku: 'KR-P02',
+    name: 'Lampu Gantung Linen & Walnut',
+    category: 'Pencahayaan',
+    price: 2650000,
+    stock: 4,
+    shortDescription:
+      'Kap lampu gantung linen berlipit dengan mahkota kayu walnut bubut.',
+    description:
+      'Memadukan kehangatan tekstil linen tenun alami dengan detail kayu walnut yang dibubut presisi.\n\nLipatan kain pada kap menyebarkan cahaya lembut ke seluruh meja makan atau ruang tengah, menciptakan suasana intim dan tenang di malam hari.',
+    imageUrl: '/src/assets/images/prod_lampu_gantung_1795398914843.jpg',
+    gallery: ['/src/assets/images/prod_lampu_gantung_1795398914843.jpg'],
+    variants: ['Linen Oat / Walnut', 'Linen Putih Kapur / Oak'],
+    specs: {
+      material: 'Kain Linen Alami & Kayu Walnut Solid',
+      dimensions: 'Diameter 46 cm × Tinggi kap 28 cm (Kabel adjustable 150 cm)',
+      weight: '2.4 kg',
+      care: 'Bersihkan debu pada lipatan linen menggunakan kuas lembut atau kemoceng.',
+    },
+    createdAt: '2026-11-19T09:00:00.000Z',
+    updatedAt: '2026-11-19T09:00:00.000Z',
+  },
+  {
+    id: 'set-teko-keramik-arang',
+    sku: 'KR-K01',
+    name: 'Set Teko Keramik Arang',
+    category: 'Keramik & Meja',
+    price: 680000,
+    stock: 14,
+    shortDescription:
+      'Satu teko stoneware buatan tangan beserta dua cangkir tanpa pegangan.',
+    description:
+      'Dibentuk di atas roda putar oleh pengrajin keramik lokal dan dibakar pada suhu 1.240°C menggunakan glasir mineral arang matte.\n\nDilengkapi saringan keramik terintegrasi pada corong teko untuk menyeduh teh daun utuh dengan aliran tuang yang bersih tanpa menetes.',
+    imageUrl: '/src/assets/images/prod_teko_keramik_1795398914264.jpg',
+    gallery: ['/src/assets/images/prod_teko_keramik_1795398914264.jpg'],
+    variants: ['Arang Matte', 'Abu Batu'],
+    specs: {
+      material: 'Tanah Liat Stoneware Food-Grade',
+      dimensions: 'Teko 650 ml · 2 Cangkir @ 160 ml',
+      weight: '1.1 kg',
+      care: 'Aman dicuci dengan tangan; tidak disarankan menggunakan sabun beraroma tajam.',
+    },
+    createdAt: '2026-11-18T15:30:00.000Z',
+    updatedAt: '2026-11-18T15:30:00.000Z',
+  },
+  {
+    id: 'tas-weekender-kulit-nabati',
+    sku: 'KR-T01',
+    name: 'Tas Weekender Kulit Nabati',
+    category: 'Tekstil & Kulit',
+    price: 3250000,
+    stock: 5,
+    shortDescription:
+      'Tas perjalanan kulit sapi full-grain samak nabati dengan hardware kuningan.',
+    description:
+      'Dijahit dari kulit sapi full-grain samak nabati (vegetable-tanned) warna cognac yang akan membentuk patina khas seiring waktu pemakaian.\n\nMemiliki kompartemen utama luas untuk perjalanan 2–3 hari, saku laptop 15 inci berlapis kanvas katun tebal, serta tali bahu kulit yang dapat dilepas.',
+    imageUrl: '/src/assets/images/prod_tas_kulit_1795398915114.jpg',
+    gallery: ['/src/assets/images/prod_tas_kulit_1795398915114.jpg'],
+    variants: ['Cognac Tan', 'Espresso Gelap'],
+    specs: {
+      material: 'Kulit Sapi Full-Grain Nabati & Ritsleting YKK Kuningan',
+      dimensions: '48 × 24 × 28 cm',
+      weight: '1.65 kg',
+      care: 'Simpan dalam dustbag katun; oleskan leather balm setiap 6 bulan.',
+    },
+    createdAt: '2026-11-17T11:00:00.000Z',
+    updatedAt: '2026-11-17T11:00:00.000Z',
+  },
+];
